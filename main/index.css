@@ -1,0 +1,11 @@
+body {
+  margin: 0; 
+}
+
+.main {
+    width: 100%;
+}
+
+.explore-image img {
+    width: 30vw;
+}
