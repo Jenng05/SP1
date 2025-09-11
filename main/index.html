@@ -15,29 +15,109 @@
 </head>
 <body>
 
-<!--Header / Navigation-->
+<!--Header-->
   <header class="site-header">
     <a href="index.html" class="logo">
         <img src="/images/logo/GigaLab.svg" alt="GigaLab logo">
     </a>
-    <nav class="main-nav">
-        <li><a href="error">Shop</a></li>
 
-        <li class="has-dropdown">
-            <a href="#">Arrangments</a>
-            <ul class="dropdown">
+<!--Navigation-->
+    <nav class="main-nav" aria-label="Main">
+        <ul class="nav-list">
 
-                <li class="dropdown-section">
-                    <strong>Programs</strong>
-                    <ul>
-                        <li><a href="#">Exhibitions</a></li>
-                        <li><a href="#">Science After Dark</a></li>
-                        <li><a href="#">Extened Hours</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+        <!--Shop-->
+            <li><a href="#">Shop</a></li>
+
+        <!--Arrangements: drop down on click-->
+            <li class="has-dropdown">
+                <details>
+                    <summary aria-label="Open the Arragnements menu">
+                        Arrangements
+                        <img src="/images/icons/chevron-down-icon.svg" alt="" alt-hidden="true" class="chevron">
+                    </summary>
+
+                    <div class="mega">
+                    <!--Programs-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">Programs</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">Exhibitions</a></li>
+                                <li><a href="#">Science After Dark</a></li>
+                                <li><a href="#">Extended Hours</a></li>
+                            </ul>
+                        </section>
+
+                    <!--School activeties-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">School activeties</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">School and Kindergarten</a></li>
+                                <li><a href="#">Teacher Resources</a></li>
+                                <li><a href="#">Group Activeties</a></li>
+                            </ul>
+                        </section>
+
+                    <!--Family adventures-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">Family adventures</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">Family Sundays</a></li>
+                                <li><a href="#">Science Playtime</a></li>
+                                <li><a href="#">Special Family Events</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </details>
+            </li>
+
+        <!--Info: dropdown on click-->
+            <li class="has-dropdown">
+                <details>
+                    <summary aria-label="Open the Info menu">
+                        Info
+                        <img src="/images/icons/chevron-down-icon.svg" alt="" alt-hidden="true" class="chevron">
+                    </summary>
+
+                    <div class="mega2">
+                    <!--Opening hours-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">Opening hours</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">When to visit us</a></li>
+                                <li><a href="#">Special Days & Holidays</a></li>
+                                <li><a href="#">Food & Drinks</a></li>
+                            </ul>
+                        </section>
+
+                    <!--Tickets and Prices-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">Tickets and Prices</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">Book your ticket now</a></li>
+                                <li><a href="#">Plan your trip</a></li>
+                                <li><a href="#">See the price list</a></li>
+                            </ul>
+                        </section>
+
+                    <!--Accessibility-->
+                        <section class="dropdown-section">
+                            <h3 class="mega-title">Accessibility</h3>
+                            <ul class="mega-links">
+                                <li><a href="#">Access and mobility</a></li>
+                                <li><a href="#">Support service</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </details>
+            </li>
+        </ul>
     </nav>
+        </ul>
+    </nav>
+
+
   </header>
 
 <!--Hero Section-->
@@ -123,9 +203,151 @@
                     <button class="explore-button">View More</button>
                 </div>
             </div>
-            
+
         </div>
     </section>
+
+    <!--Stay Tuned for New Adventures-->
+    <section class="stay-tuned">
+        <h2>Stay Tuned for New Adventures</h2>
+        <div class="stay-tuned-cards">
+
+            <div class="stay-tuned-card-1">
+                <img src="/images/kids-playing-robot.jpg">
+                <h3>Coming soon</h3>
+                <button class="stay-tuned-button">For School</button>
+            </div>
+
+            <div class="stay-tuned-card-2">
+                <img src="/images/vr-paiting-guy.jpg">
+                <h3>Coming soon</h3>
+                <button class="stay-tuned-button">For Families</button>
+            </div>
+
+            <div class="stay-tuned-card-3">
+                <img src="/images/astronaut.jpg">
+                <h3>Coming soon</h3>
+                <button class="stay-tuned-button">Exhibitions</button>
+            </div>
+
+            <div class="stay-tuned-card-4">
+                <img src="/images/museum-hall.jpg">
+                <h3>Coming soon</h3>
+                <button class="stay-tuned-button">Food & Drinks</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="footer-info-sections">
+
+    <!--Navigation-->
+            <nav class="footer-nav" aria-label="Footer navigation">
+            <h4>Navigation</h4>
+
+            <ul>
+                <li>
+                    <a href="opening-hours.html">
+                        <img src="/images/icons/clock-icon.svg" alt="" aria-hidden="true">
+                        <span>Opening hours</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/rocket-icon.svg" alt="" aria-hidden="true">
+                        <span>Programs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true">
+                        <span>Tickets & Prices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="exhibition.html">
+                        <img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true">
+                        <span>Exhibitions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about-us.html">
+                        <img src="/images/icons/telescope-icon.svg" alt="" aria-hidden="true">
+                        <span>About Us</span>
+                    </a>
+                </li>
+
+            </ul>
+            </nav>
+
+        <!--Follow us-->
+            <nav class="follow-us" aria-label="Follow us on sosial media">
+            <h4>Follow Us</h4>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/instagram-icon.svg" alt="" aria-hidden="true">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/facebook-icon.svg" alt="" aria-hidden="true">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/youtube-icon.svg" alt="" aria-hidden="true">
+                        <span>YouTube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/images/icons/snapchat-icon.svg" alt="" aria-hidden="true">
+                        <span>Snapchat</span>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+
+        <!--Contact us-->
+            <nav class="contact-us" aria-label="How to contact us">
+            <h4>Contact Us</h4>
+
+        <ul>
+            <li>
+            <img src="/images/icons/map-icon.svg" alt="" aria-hidden="true">
+            <span>Oslo, Norway</span>
+            </li>
+            <li>
+            <img src="/images/icons/envelope-icon.svg" alt="" aria-hidden="true">
+            <span>Contact@gigalab.no</span>
+            </li>
+
+            <li>
+            <img src="/images/icons/phone-icon.svg" alt="" aria-hidden="true">
+            <span>+47 123 45 678</span>
+            </li>
+        </ul>
+        </nav>
+        </div>
+
+        <!--Bottom footer-->
+        <div class="bottom-footer">
+            <h4 class="join-the-discovery">Join the discovery</h4>
+            <div class="newsletter">
+                <input type="text" class="newsletter-input"
+                placeholder="Enter your email..." 
+                name="text">
+                <button>Get Updates</button>
+            </div>
+
+            <p class="copyright">&copy; 2025 GigaLab. All rights reserved.</p>
+        </div>
+    </footer>
   </main>
 </body>
 </html>

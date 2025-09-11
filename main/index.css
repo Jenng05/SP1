@@ -9,3 +9,27 @@ body {
 .explore-image img {
     width: 30vw;
 }
+
+summary {
+  list-style: none;             /* fjerner den vanlige "bullet" */
+}
+
+summary::-webkit-details-marker {
+  display: none;                /* fjerner standardpilen i Chrome/Safari */
+}
+
+summary::marker {
+  content: none;                /* fjerner standardpilen i Firefox */
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Når details er åpen → roter pilen ned */
+details[open] .chevron {
+  transform: rotate(180deg);
+}
