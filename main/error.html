@@ -6,16 +6,16 @@
   <title>Coming Soon | GigaLab</title>
   <meta name="description" content="Exciting things are on the way at GigaLab! Stay tuned for new science exhibits and experiences coming soon." />
   <meta name="robots" content="noindex">
-  
-  <!-- Google Fonts -->
+
+<!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+<!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
+<body>
 <!--Header-->
   <header class="site-header">
     <a href="index.html" class="logo">
@@ -117,15 +117,19 @@
     </nav>
   </header>
 
-<!--Hero Section-->
-  <main>
-    <section class="hero">
-        <img src="/images/girl-blue-room.jpg" alt="Young girl sitting in a blue room staring to at the ceiling">
-        <h1>Opening Soon - Join the Discovery</h1>
-        <div class="hero-cta">
-            <a href="about-us.html">Read More</a>
-        </div>
+<!--Main Section-->
+<main id="main" class="container">
+    <section class="error-hero" aria-labelledby="error-title">
+        <h1 id="error-title">404 - Page not found</h1>
+        <p>Sorry, we couldn’t find that page. It might have been moved or no longer exists.</p>
     </section>
+
+    <nav aria-label="Helpful links" class="error-actions">
+        <a href="index.html">Go to homapage</a>
+        <a class="button button-secondary" href="exhibition.html">Eplore exhibitions</a>
+        <a class="button button-secondary" href="opening-hours.html">Opening hours</a>
+    </nav>
+</main>
 
     <!--Footer-->
     <footer class="footer-section">
@@ -237,6 +241,5 @@
             <p class="copyright">&copy; 2025 GigaLab. All rights reserved.</p>
         </div>
     </footer>
-  </main>
 </body>
 </html>
