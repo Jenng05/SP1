@@ -18,8 +18,18 @@
 <!--Header-->
   <header class="site-header">
     <a href="index.html" class="logo">
-        <img src="/images/logo/GigaLab.svg" alt="GigaLab logo">
+        <img src="/images/logo/GigaLab.svg" alt="GigaLab logo" class="logo">
     </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+  <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+    <img src="/images/icons/hamburger-button.svg">
+  </label>
+
+    
+
+    <aside id="drawer" class="drawer" aria-label="Main navigation">
+    <label for="nav-toggle" class="close" aria-label="Close menu"><img src="/images/icons/close-icon.svg"></label>
 
 <!--Navigation-->
     <nav class="main-nav" aria-label="Main">
@@ -66,7 +76,6 @@
                                 <li><a href="#">Special Family Events</a></li>
                             </ul>
                         </section>
-
                     </div>
                 </details>
             </li>
@@ -79,7 +88,7 @@
                         <img src="/images/icons/chevron-down-icon.svg" alt="" alt-hidden="true" class="chevron">
                     </summary>
 
-                    <div class="mega2">
+                    <div class="mega">
                     <!--Opening hours-->
                         <section class="dropdown-section">
                             <h3 class="mega-title">Opening hours</h3>
@@ -114,10 +123,7 @@
             </li>
         </ul>
     </nav>
-        </ul>
-    </nav>
-
-
+    <label for="nav-toggle" class="overlay" aria-hidden="true"></label>
   </header>
 
 <!--Hero Section-->
