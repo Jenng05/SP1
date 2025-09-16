@@ -204,114 +204,53 @@
     </section>
 </main>
     <!--Footer-->
-    <footer class="footer-section">
-        <div class="footer-info-sections">
+    <footer class="footer">
+        <div class="footer-top container">
+    <!-- Navigation -->
+    <nav class="footer-col" aria-label="Footer navigation">
+      <h2 class="footer-title">Navigation</h2>
+      <ul class="footer-links">
+        <li><a href="opening-hours.html"><img src="/images/icons/clock-icon.svg" alt="" aria-hidden="true"><span>Opening Hours</span></a></li>
+        <li><a href="#"><img src="/images/icons/rocket-icon.svg" alt="" aria-hidden="true"><span>Programs</span></a></li>
+        <li><a href="#"><img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true"><span>Tickets & Prices</span></a></li>
+        <li><a href="exhibition.html"><img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true"><span>Exhibitions</span></a></li>
+        <li><a href="about-us.html"><img src="/images/icons/telescope-icon.svg" alt="" aria-hidden="true"><span>About Us</span></a></li>
+      </ul>
+    </nav>
 
-    <!--Navigation-->
-            <nav class="footer-nav" aria-label="Footer navigation">
-            <h4>Navigation</h4>
+    <!-- Social -->
+    <nav class="footer-col" aria-label="Follow us on social media">
+      <h2 class="footer-title">Follow Us</h2>
+      <ul class="footer-links">
+        <li><a href="#"><img src="/images/icons/instagram-icon.svg" alt="" aria-hidden="true"><span>Instagram</span></a></li>
+        <li><a href="#"><img src="/images/icons/facebook-icon.svg" alt="" aria-hidden="true"><span>Facebook</span></a></li>
+        <li><a href="#"><img src="/images/icons/youtube-icon.svg" alt="" aria-hidden="true"><span>YouTube</span></a></li>
+        <li><a href="#"><img src="/images/icons/snapchat-icon.svg" alt="" aria-hidden="true"><span>Snapchat</span></a></li>
+      </ul>
+    </nav>
 
-            <ul>
-                <li>
-                    <a href="opening-hours.html">
-                        <img src="/images/icons/clock-icon.svg" alt="" aria-hidden="true">
-                        <span>Opening hours</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/rocket-icon.svg" alt="" aria-hidden="true">
-                        <span>Programs</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true">
-                        <span>Tickets & Prices</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="exhibition.html">
-                        <img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true">
-                        <span>Exhibitions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about-us.html">
-                        <img src="/images/icons/telescope-icon.svg" alt="" aria-hidden="true">
-                        <span>About Us</span>
-                    </a>
-                </li>
-
-            </ul>
-            </nav>
-
-        <!--Follow us-->
-            <nav class="follow-us" aria-label="Follow us on sosial media">
-            <h4>Follow Us</h4>
-
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/instagram-icon.svg" alt="" aria-hidden="true">
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/facebook-icon.svg" alt="" aria-hidden="true">
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/youtube-icon.svg" alt="" aria-hidden="true">
-                        <span>YouTube</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/snapchat-icon.svg" alt="" aria-hidden="true">
-                        <span>Snapchat</span>
-                    </a>
-                </li>
-            </ul>
-            </nav>
-
-        <!--Contact us-->
-            <nav class="contact-us" aria-label="How to contact us">
-            <h4>Contact Us</h4>
-
-        <ul>
-            <li>
-            <img src="/images/icons/map-icon.svg" alt="" aria-hidden="true">
-            <span>Oslo, Norway</span>
-            </li>
-            <li>
-            <img src="/images/icons/envelope-icon.svg" alt="" aria-hidden="true">
-            <span>Contact@gigalab.no</span>
-            </li>
-
-            <li>
-            <img src="/images/icons/phone-icon.svg" alt="" aria-hidden="true">
-            <span>+47 123 45 678</span>
-            </li>
-        </ul>
-        </nav>
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="footer-title">Contact Us</h2>
+      <address class="footer-address">
+        <p><img src="/images/icons/map-icon.svg" alt="" aria-hidden="true"><span>Oslo, Norway</span></p>
+        <p><img src="/images/icons/envelope-icon.svg" alt="" aria-hidden="true"><a href="#">contact@gigalab.no</a></p>
+        <p><img src="/images/icons/phone-icon.svg" alt="" aria-hidden="true"><a href="tel:+4712345678">+47 123 45 678</a></p>
+      </address>
+    </section>
         </div>
 
-        <!--Bottom footer-->
-        <div class="bottom-footer">
-            <h4 class="join-the-discovery">Join the discovery</h4>
-            <div class="newsletter">
-                <input type="text" class="newsletter-input"
-                placeholder="Enter your email..." 
-                name="text">
-                <button>Get Updates</button>
-            </div>
+  <!-- Bottom -->
+        <div class="footer-bottom container">
+    <form class="newsletter" action="#" method="post" aria-labelledby="newsletter-title">
+      <h2 id="newsletter-title" class="footer-title">Join the discovery</h2>
+      <label class="visually-hidden" for="newsletter-email">Email</label>
+      <input id="newsletter-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Enter your email…" required>
+      <button type="submit">Get Updates</button>
+    </form>
 
-            <p class="copyright">&copy; 2025 GigaLab. All rights reserved.</p>
+    <p class="copyright">© 2025 GigaLab. All rights reserved.</p>
         </div>
-    </footer>
+</footer>
 </body>
 </html>

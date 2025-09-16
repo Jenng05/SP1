@@ -18,8 +18,18 @@
 <!--Header-->
   <header class="site-header">
     <a href="index.html" class="logo">
-        <img src="/images/logo/GigaLab.svg" alt="GigaLab logo">
+        <img src="/images/logo/GigaLab.svg" alt="GigaLab logo" class="logo">
     </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+  <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+    <img src="/images/icons/hamburger-button.svg">
+  </label>
+
+    
+
+    <aside id="drawer" class="drawer" aria-label="Main navigation">
+    <label for="nav-toggle" class="close" aria-label="Close menu"><img src="/images/icons/close-icon.svg"></label>
 
 <!--Navigation-->
     <nav class="main-nav" aria-label="Main">
@@ -66,7 +76,6 @@
                                 <li><a href="#">Special Family Events</a></li>
                             </ul>
                         </section>
-
                     </div>
                 </details>
             </li>
@@ -79,7 +88,7 @@
                         <img src="/images/icons/chevron-down-icon.svg" alt="" alt-hidden="true" class="chevron">
                     </summary>
 
-                    <div class="mega2">
+                    <div class="mega">
                     <!--Opening hours-->
                         <section class="dropdown-section">
                             <h3 class="mega-title">Opening hours</h3>
@@ -114,6 +123,7 @@
             </li>
         </ul>
     </nav>
+    <label for="nav-toggle" class="overlay" aria-hidden="true"></label>
   </header>
 
 <!--Hero Section-->
@@ -188,7 +198,7 @@
                 <div class="explore-info">
                     <h4>Educational Programs</h4>
                     <p>Bring science to life for students with hands-on activities and activities.</p>
-                    <a href="school-kindergarten.html"><button class="explore-button">View More</button></a>
+                    <a href="school-kindergarten.html" class="explore-button">View More</a>
                 </div>
             </div>
 
@@ -211,141 +221,81 @@
         <h2>Stay Tuned for New Adventures</h2>
         <div class="stay-tuned-cards">
 
-            <div class="stay-tuned-card-1">
+            <div class="stay-card">
                 <img src="/images/kids-playing-robot.jpg" alt="Group of school children gathered around a robot in a classroom">
                 <h3>Coming soon</h3>
-                <button class="stay-tuned-button">For School</button>
+                <a href="#" class="stay-btn">For School</a>
             </div>
 
-            <div class="stay-tuned-card-2">
+            <div class="stay-card">
                 <img src="/images/vr-paiting-guy.jpg" alt="Person wearing a VR headset exploring virtual reality">
                 <h3>Coming soon</h3>
-                <button class="stay-tuned-button">For Families</button>
+                <a href="#" class="stay-btn">For Families</a>
             </div>
 
-            <div class="stay-tuned-card-3">
+            <div class="stay-card">
                 <img src="/images/astronaut.jpg" alt="Astronaut suit on display inside a space exhibition">
                 <h3>Coming soon</h3>
-                <button class="stay-tuned-button">Exhibitions</button>
+                <a href="#" class="stay-btn">Exhibitions</a>
             </div>
 
-            <div class="stay-tuned-card-4">
+            <div class="stay-card">
                 <img src="/images/museum-hall.jpg" alt="Interior view of a modern museum café with tables and chairs">
                 <h3>Coming soon</h3>
-                <button class="stay-tuned-button">Food & Drinks</button>
+                <a href="#" class="stay-btn">Food & Drinks</a>
             </div>
         </div>
     </section>
 </main>
     <!--Footer-->
-    <footer class="footer-section">
-        <div class="footer-info-sections">
+    <footer class="footer">
+        <div class="footer-top container">
+    <!-- Navigation -->
+    <nav class="footer-col" aria-label="Footer navigation">
+      <h2 class="footer-title">Navigation</h2>
+      <ul class="footer-links">
+        <li><a href="opening-hours.html"><img src="/images/icons/clock-icon.svg" alt="" aria-hidden="true"><span>Opening Hours</span></a></li>
+        <li><a href="#"><img src="/images/icons/rocket-icon.svg" alt="" aria-hidden="true"><span>Programs</span></a></li>
+        <li><a href="#"><img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true"><span>Tickets & Prices</span></a></li>
+        <li><a href="exhibition.html"><img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true"><span>Exhibitions</span></a></li>
+        <li><a href="about-us.html"><img src="/images/icons/telescope-icon.svg" alt="" aria-hidden="true"><span>About Us</span></a></li>
+      </ul>
+    </nav>
 
-    <!--Navigation-->
-            <nav class="footer-nav" aria-label="Footer navigation">
-            <h4>Navigation</h4>
+    <!-- Social -->
+    <nav class="footer-col" aria-label="Follow us on social media">
+      <h2 class="footer-title">Follow Us</h2>
+      <ul class="footer-links">
+        <li><a href="#"><img src="/images/icons/instagram-icon.svg" alt="" aria-hidden="true"><span>Instagram</span></a></li>
+        <li><a href="#"><img src="/images/icons/facebook-icon.svg" alt="" aria-hidden="true"><span>Facebook</span></a></li>
+        <li><a href="#"><img src="/images/icons/youtube-icon.svg" alt="" aria-hidden="true"><span>YouTube</span></a></li>
+        <li><a href="#"><img src="/images/icons/snapchat-icon.svg" alt="" aria-hidden="true"><span>Snapchat</span></a></li>
+      </ul>
+    </nav>
 
-            <ul>
-                <li>
-                    <a href="opening-hours.html">
-                        <img src="/images/icons/clock-icon.svg" alt="" aria-hidden="true">
-                        <span>Opening hours</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/rocket-icon.svg" alt="" aria-hidden="true">
-                        <span>Programs</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true">
-                        <span>Tickets & Prices</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="exhibition.html">
-                        <img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true">
-                        <span>Exhibitions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about-us.html">
-                        <img src="/images/icons/telescope-icon.svg" alt="" aria-hidden="true">
-                        <span>About Us</span>
-                    </a>
-                </li>
-
-            </ul>
-            </nav>
-
-        <!--Follow us-->
-            <nav class="follow-us" aria-label="Follow us on sosial media">
-            <h4>Follow Us</h4>
-
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/instagram-icon.svg" alt="" aria-hidden="true">
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/facebook-icon.svg" alt="" aria-hidden="true">
-                        <span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/youtube-icon.svg" alt="" aria-hidden="true">
-                        <span>YouTube</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/images/icons/snapchat-icon.svg" alt="" aria-hidden="true">
-                        <span>Snapchat</span>
-                    </a>
-                </li>
-            </ul>
-            </nav>
-
-        <!--Contact us-->
-            <nav class="contact-us" aria-label="How to contact us">
-            <h4>Contact Us</h4>
-
-        <ul>
-            <li>
-            <img src="/images/icons/map-icon.svg" alt="" aria-hidden="true">
-            <span>Oslo, Norway</span>
-            </li>
-            <li>
-            <img src="/images/icons/envelope-icon.svg" alt="" aria-hidden="true">
-            <span>Contact@gigalab.no</span>
-            </li>
-
-            <li>
-            <img src="/images/icons/phone-icon.svg" alt="" aria-hidden="true">
-            <span>+47 123 45 678</span>
-            </li>
-        </ul>
-        </nav>
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="footer-title">Contact Us</h2>
+      <address class="footer-address">
+        <p><img src="/images/icons/map-icon.svg" alt="" aria-hidden="true"><span>Oslo, Norway</span></p>
+        <p><img src="/images/icons/envelope-icon.svg" alt="" aria-hidden="true"><a href="#">contact@gigalab.no</a></p>
+        <p><img src="/images/icons/phone-icon.svg" alt="" aria-hidden="true"><a href="tel:+4712345678">+47 123 45 678</a></p>
+      </address>
+    </section>
         </div>
 
-        <!--Bottom footer-->
-        <div class="bottom-footer">
-            <h4 class="join-the-discovery">Join the discovery</h4>
-            <div class="newsletter">
-                <input type="text" class="newsletter-input"
-                placeholder="Enter your email..." 
-                name="text">
-                <button>Get Updates</button>
-            </div>
+  <!-- Bottom -->
+        <div class="footer-bottom container">
+    <form class="newsletter" action="#" method="post" aria-labelledby="newsletter-title">
+      <h2 id="newsletter-title" class="footer-title">Join the discovery</h2>
+      <label class="visually-hidden" for="newsletter-email">Email</label>
+      <input id="newsletter-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Enter your email…" required>
+      <button type="submit">Get Updates</button>
+    </form>
 
-            <p class="copyright">&copy; 2025 GigaLab. All rights reserved.</p>
+    <p class="copyright">© 2025 GigaLab. All rights reserved.</p>
         </div>
-    </footer>
+</footer>
+
 </body>
 </html>
