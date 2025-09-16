@@ -21,12 +21,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.55) 15%,
-    rgba(0,0,0,.30) 45%,
-    rgba(0,0,0,.10) 100%
-  );
+  background:rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
@@ -115,9 +110,9 @@ margin: 2rem auto;
 
 .special-days {
   background: #f2f2f2;
-  padding: 1.5rem;               /* luft inni boksen */
-  margin: 1.5rem auto;           /* luft rundt */
-  max-width: 100%;              /* ikke full bredde */
+  padding: 1.5rem; 
+  margin: 1.5rem auto; 
+  max-width: 100%;
 }
 
 .special-days h3 {
@@ -129,25 +124,24 @@ margin: 2rem auto;
 }
 
 .special-days ul {
-  list-style: disc;              /* vanlige punkter */
-  padding-left: 1.2rem;          /* plass til punktene */
+  list-style: disc; 
+  padding-left: 1.2rem;
   margin: 0;
 }
 
 .special-days li {
-  margin-bottom: 0.6rem;         /* luft mellom punktene */
+  margin-bottom: 0.6rem;
   line-height: 1.4;
   font-size: 0.95rem;
 }
 
 /*Plan you visit*/
-
 .plan-your-visit {
   padding: 1.5rem 1rem 2rem;
   display: grid;
-  gap: 14px;            /* avstand mellom knappene */
-  max-width: 360px;     /* gjør feltet litt smalere enn skjermen */
-  margin: 0 auto;       /* sentrer */
+  gap: 14px;
+  max-width: 360px; 
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -156,7 +150,6 @@ margin: 2rem auto;
   font-weight: 700;
 }
 
-/* Bruker de samme klassene du allerede har */
 .plan-your-visit h3{
     letter-spacing: 6%;
     margin: 1rem 2rem 0rem 2rem
@@ -173,7 +166,6 @@ margin: 2rem auto;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(0,0,0,.12);
   transition: background .2s ease, transform .1s ease;
 }
 
