@@ -38,45 +38,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 30vw;
 }
 
-/*Header section*/
-.logo {
-  display: block;
-  width: 200px;
-  height: 60px;
-  background-image: url("/images/logo/GigaLab.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-@media (min-width: 376px) {
-  .logo {
-    background-image: url("/images/logo/GigaLab-fallback.png");
-  }
-}
-
-.site-header {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-  background: linear-gradient(to right, #F7EFF5 0%, #004B3F 100%);
-  display: flex;
-  justify-content: space-between;
-}
-
-summary {
-  list-style: none;             
-}
-
-summary::-webkit-details-marker {
-  display: none;                
-}
-
-summary::marker {
-  content: none;               
-}
-
 .chevron {
   width: 16px;
   height: 16px;
@@ -88,67 +49,165 @@ details[open] .chevron {
   transform: rotate(180deg);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+ul {
+  list-style: none;
 }
 
-/* Hidden checkbox + buttons */
-.nav-toggle{position:absolute;left:-9999px;}
-.hamburger{padding:12px 16px;cursor:pointer;}
-.close{align-self:flex-end;cursor:pointer;padding:8px;}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:.3s;z-index:30;}
-
-/* Off-canvas for mobile */
-.drawer{
-  position:fixed; inset:0 0 0 auto; width:80vw; max-width:360px;
-  background:#6b26b6; color:#fff; padding:16px;
-  translate:100% 0; transition:translate .3s ease; z-index:40;
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #F7EFF5 0%, #004B3F 100%);
 }
-.nav-toggle:checked ~ .drawer{ translate:0 0; }
-.nav-toggle:checked ~ .overlay{ opacity:1; pointer-events:auto; }
 
-.main-nav ul{list-style:none;margin:0;padding:0;}
-.nav-list > li{border-bottom:1px solid rgba(255,255,255,.15);}
-.main-nav a{display:block;color:#fff;text-decoration:none;padding:12px 8px;border-radius:8px;}
-.main-nav a:hover{background:rgba(255,255,255,.12);}
+/* Logo */
+.logo img {
+  height: 40px;
+}
 
-/* Submenu on mobile using <details> (click to open) */
-.has-dropdown details{background:rgba(255,255,255,.08);border-radius:10px;margin:10px 0;padding:4px;}
-summary{cursor:pointer;padding:12px 8px;font-weight:600;list-style:none;display:flex;align-items:center;gap:.5rem;}
-summary::-webkit-details-marker{display:none;}
-.chevron{width:16px;height:16px;transition:transform .2s;}
-details[open] .chevron{transform:rotate(180deg);}
-.mega{display:grid;gap:12px;padding:8px 8px 12px;}
+/* Checkbox hidden */
+.nav-toggle {
+  display: none;
+}
 
-/* Everything above is basically for mobile only. On desktop we override: */
-@media (min-width:900px){
-  /* Skjul hamburger/overlay og gjør drawer "vanlig" container */
-  .hamburger,.overlay,.close{display:none;}
-  .drawer{position:static; translate:0; width:auto; max-width:none; background:transparent; color:inherit; padding:0;}
+/* Hamburger button */
+.hamburger {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger img {
+  width: 28px;
+  height: 28px;
+}
 
-  /* Horizontal menu (your desktop style)*/
-  .main-nav .nav-list{display:flex;gap:24px;align-items:center;}
-  .nav-list > li{position:relative;border:0;}
-  .main-nav a{color:inherit;padding:8px 6px;}
+/* Menu (hidden by default) */
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: -100%; /* skjult utenfor skjermen */
+  width: 75%;
+  height: 100%;
+  background: #6634A7;
+  color: white;
+  padding: 2rem 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Mega dropdown on hover/focus */
-  .has-dropdown details{padding:0;margin:0;background:transparent;}
-  .has-dropdown .mega{
-    position:absolute; top:100%; left:0; min-width:560px;
-    display:none; grid-template-columns:repeat(3,minmax(160px,1fr));
-    background:#fff; color:#222; padding:16px; gap:16px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15); border-radius:12px; z-index:50;
+/* Når checkbox er aktiv → skyv inn meny */
+.nav-toggle:checked ~ .main-nav {
+  right: 0;
+}
+
+/* Close button */
+.close {
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.close img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Links */
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5rem 0;
+}
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop: skjul hamburger, vis meny horisontalt */
+@media (min-width: 900px) {
+  .hamburger,
+  .close {
+    display: none;
   }
-  .has-dropdown:hover .mega,
-  .has-dropdown:focus-within .mega{ display:grid; }
+
+  .main-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    color: inherit;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
 }
+
+/*Hero section*/
+
+.hero {
+  position: relative;
+  height: 70vh; /* or 448px if you prefer */
+  min-height: 320px;
+  background: url("/images/girl-blue-room.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: flex-end; /* content sits at the bottom */
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* overlay covering the bottom 30% */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;  /* 30% of hero height */
+  background: rgba(0, 0, 0, 0.45); /* transparent black */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* hero text + button */
+.hero-content {
+  position: relative;
+  z-index: 2; /* make sure it’s above overlay */
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero-cta a {
+  background: #FB8500;
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .2s;
+  margin-left: -63%;
+
+}
+
+.hero-cta a:hover {
+  background: #edaa5e;
+}
+
 
 /*CTA section*/
 
@@ -190,6 +249,9 @@ padding: 2rem 1rem;
 
 /*Explore the Wonders of Science*/
 
+.explore-section h2{
+  text-align: center;
+}
 .explore-section{
   padding: 2rem 1rem;
 }
@@ -253,6 +315,7 @@ padding: 2rem 1rem;
   border-radius: 17px;
   transition: .2s ease;
   color: #fff;
+  margin-left: 5%;
 }
 
 /*Stay Tuned for new adventures*/
@@ -277,7 +340,7 @@ padding: 2rem 1rem;
   border-radius: 6px;
   overflow: hidden;
   height: 280px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
 }
 
 .stay-card img{
@@ -286,6 +349,41 @@ padding: 2rem 1rem;
   object-fit: cover;
   display: block;
 }
+
+.stay-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:rgba(0, 0, 0, 0.351);
+  z-index: 1;
+}
+
+.stay-info{
+position: absolute;
+  inset: 0;
+  z-index:2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.stay-btn{
+  display: inline-block;
+  margin-top: .25rem;
+  padding: .55rem 1rem;
+  background: #6D578A;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+
 
 /*Footer*/
 
