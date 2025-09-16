@@ -1,3 +1,7 @@
+.site-header-exhibition{
+    background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
+}
+
 .hero-exhibition {
   position: relative;
   height: 52vh;       
@@ -27,8 +31,8 @@
 }
 
 .hero-text {
-  position: absolute;
-  bottom: 20%;
+  position: inherit;
+  bottom: 35%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -40,7 +44,7 @@
   margin: 0;
   font-size: clamp(1.4rem, 4.5vw, 2.4rem);
   font-weight: 700;
-  letter-spacing: .2px;
+  letter-spacing: 9%;
 }
 
 .hero-text h3 {
@@ -52,18 +56,16 @@
 
 /* Ready to Explore */
 .exhibitions {
-  padding: 1.25rem 1rem 2rem;
   display: grid;
   gap: 1rem;
+  background-color: #fff;
+  padding: 2rem 0;
 }
 
 .exhibition-background {
     background-color: #e8e3eb;
-    padding: 2rem 0rem;
-    width: 100%;
-
     display: grid;
-    gap: 1rem;
+    gap: 1rem;padding: 2rem 1rem;
 }
 
 .exhibition-intro {

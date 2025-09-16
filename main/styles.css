@@ -468,7 +468,10 @@ position: absolute;
 .newsletter button:hover { background: #531d8a; }
 
 /* Copyright */
-.copyright { margin: .5rem 0 0; opacity: .9; }
+.copyright { 
+opacity: .9; 
+text-align: center;
+}
 
 /* Responsive */
 @media (min-width: 768px) {

@@ -1,0 +1,192 @@
+.site-header-opening-hours{
+    background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
+}
+
+.hero-opening-hours {
+  position: relative;
+  height: 52vh;       
+  min-height: 320px;
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.hero-opening-hours img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-opening-hours::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.55) 15%,
+    rgba(0,0,0,.30) 45%,
+    rgba(0,0,0,.10) 100%
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  position: inherit;
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 9%;
+}
+
+/*Opening hours table*/
+
+.opening-hours-table{
+margin: 2rem auto;
+}
+
+.hours-card{
+  background:#6634A7;
+  color:#fff;
+  border-radius:20px;
+  padding: 1rem 3rem 1rem 3rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.hours{
+  width:100%;
+  border-collapse:collapse;
+  background:transparent; 
+  table-layout:fixed;  
+}
+
+.hours thead{
+  position:absolute;
+  width:1px;height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+}
+
+.hours td{
+  padding:14px 4px;
+  font-size:0.95rem;
+}
+
+.hours tbody tr + tr td{
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.hours td:first-child{
+  font-weight:700;
+  text-align:left;
+  width:56%;
+  word-break:break-word;
+  line-height:1.25;
+}
+
+.hours td:last-child{
+  text-align:right;
+  font-weight:600;
+  opacity:.98;
+}
+
+.hours-title{
+  text-align:center;
+  margin:0 0 .75rem;
+}
+
+.hours-note{
+    font-weight: normal;
+}
+
+/*Special Days*/
+
+.special-days {
+  background: #f2f2f2;
+  padding: 1.5rem;               /* luft inni boksen */
+  margin: 1.5rem auto;           /* luft rundt */
+  max-width: 100%;              /* ikke full bredde */
+}
+
+.special-days h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 8%;
+}
+
+.special-days ul {
+  list-style: disc;              /* vanlige punkter */
+  padding-left: 1.2rem;          /* plass til punktene */
+  margin: 0;
+}
+
+.special-days li {
+  margin-bottom: 0.6rem;         /* luft mellom punktene */
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+/*Plan you visit*/
+
+.plan-your-visit {
+  padding: 1.5rem 1rem 2rem;
+  display: grid;
+  gap: 14px;            /* avstand mellom knappene */
+  max-width: 360px;     /* gjør feltet litt smalere enn skjermen */
+  margin: 0 auto;       /* sentrer */
+  text-align: center;
+}
+
+.plan-your-visit h3 {
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+/* Bruker de samme klassene du allerede har */
+.plan-your-visit h3{
+    letter-spacing: 6%;
+    margin: 1rem 2rem 0rem 2rem
+}
+
+.plan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* sentrerer tekst + ikon */
+  gap: 10px;               /* avstand mellom ikon og tekst */
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #6b26b6;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  transition: background .2s ease, transform .1s ease;
+}
+
+.plan-btn img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* gjør ikoner hvite hvis de er mørke */
+}
+
+.plan-btn:hover {
+  background: #5b1fa1;
+}
+
+.plan-btn:active {
+  transform: translateY(1px);
+}

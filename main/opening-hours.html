@@ -12,11 +12,12 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="opening-hours.css" />
 </head>
 <body>
 
 <!--Header-->
-    <header class="site-header site-header-home">
+    <header class="site-header site-header-opening-hours">
     <a href="index.html" class="logo">
         <img src="/images/logo/GigaLab.svg" alt="GigaLab logo" class="logo">
     </a>
@@ -129,14 +130,15 @@
   <main>
     <section class="hero-opening-hours">
         <img src="/images/museum-wall.jpg" alt="Interior view of the museum with classical columms ans arches">
-        <h1>Opening Hours at GigaLab</h1>
+        <div class="hero-text"><h1>Opening Hours at GigaLab</h1></div>
     </section>
 
 <!--Opening hours table-->
     <section class="opening-hours-table">
-        <h2>When to visit us</h2>
+        <h2 class="hours-title">When to visit us</h2>
 
-    <table>
+    <div class="hours-card">
+  <table class="hours">
     <thead>
       <tr>
         <th scope="col">Day</th>
@@ -144,40 +146,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Monday</td>
-        <td>Closed</td>
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>10:00 - 16:00</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>10:00 - 16:00</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>10:00 s- 16:00</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>10:00 - 19:00</td>
-      </tr>
-      <tr>
-        <td>Saturday</td>
-        <td>09:00 - 16:00</td>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>09:00 - 13:00</td>
-      </tr>
-      <tr>
-        <td>Food & Drinks and Shop</td>
-        <td>Open during museum hours</td>
-      </tr>
+      <tr><td>Monday</td><td>Closed</td></tr>
+      <tr><td>Tuesday</td><td>10:00 – 16:00</td></tr>
+      <tr><td>Wednesday</td><td>10:00 – 16:00</td></tr>
+      <tr><td>Thursday</td><td>10:00 – 16:00</td></tr>
+      <tr><td>Friday</td><td>10:00 – 19:00</td></tr>
+      <tr><td>Saturday</td><td>09:00 – 16:00</td></tr>
+      <tr><td>Sunday</td><td>09:00 – 13:00</td></tr>
+      <tr><td>Food & Drinks and Shop</td><td><span class="hours-note">Open during museum hours</span></td></tr>
     </tbody>
   </table>
+</div>
     </section>
 
 <!--Special days-->
@@ -193,19 +172,20 @@
 
 <!--Plan your visit-->
     <section class="plan-your-visit">
-        <a href="#" class="cta-button">
+        <h3>Plan your visit</h3>
+        <a href="#" class="cta-button plan-btn">
                 <img src="/images/icons/ticket-icon.svg" alt="" aria-hidden="true">
                 <span>Get Tickets</span>
         </a>
-        <a href="#" class="cta-button">
+        <a href="#" class="cta-button plan-btn">
                 <img src="/images/icons/museum-icon.svg" alt="" aria-hidden="true">
                 <span>Explore Exhibitions</span>
         </a>
-        <a href="#" class="cta-button">
+        <a href="#" class="cta-button plan-btn">
                 <img src="/images/icons/flask-icon.svg" alt="" aria-hidden="true">
                 <span>Plan Your Family Day</span>
         </a>
-        <a href="#" class="cta-button">
+        <a href="#" class="cta-button plan-btn">
                 <img src="/images/icons/robot-icon.svg" alt="" aria-hidden="true">
                 <span>Educational Visits</span>
         </a>
