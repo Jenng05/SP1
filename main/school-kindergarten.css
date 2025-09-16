@@ -1,0 +1,161 @@
+.site-header-schoolkindergarten{
+    background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
+}
+
+.hero-school-and-kindergarten {
+  position: relative;
+  height: 52vh;       
+  min-height: 320px;
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.hero-school-and-kindergarten img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-school-and-kindergarten::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.55) 15%,
+    rgba(0,0,0,.30) 45%,
+    rgba(0,0,0,.10) 100%
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  position: inherit;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 9%;
+}
+
+.hero-text h2 {
+  margin: .5rem 0 0;
+  font-size: clamp(0.95rem, 3.5vw, 1.25rem);
+  font-weight: 500;
+  opacity: .95;
+}
+
+/*Bring Science to Life for Young Minds*/
+.school-and-kindeergarten-intro{
+    text-align: center;
+   padding: 2rem 2rem 6rem 2rem;
+}
+
+.programs {
+  background: #D7D4DB;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.programs-grid {
+  max-width: 380px;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+.card {
+  background: #BC9EE2;
+  border-radius: 12px;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.card figure {
+  position: relative;
+  margin: 0 0 10px;
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card figure img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+
+.card figure::before{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(to top, rgba(0,0,0,.55) 15%, rgba(0,0,0,.18) 80%);
+  z-index:1;
+}
+.image-title{
+  position:absolute; left:50%; bottom:12px; transform:translateX(-50%);
+  margin:0; padding:0 .4rem; color:#fff; z-index:2;
+  font-weight:800; font-size:1rem; text-align:center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,.45);
+}
+
+.card-info{
+    text-align:center;
+    display:grid;
+    gap:5%;
+
+}
+.card-text{
+  margin:0;
+  font-size:.88rem; line-height:1.35;
+  color:#efe8f8;
+}
+
+.button{
+  display:inline-block;
+  padding: .4rem .8rem;
+  border-radius: 8px;
+  background:#6b26b6; color:#fff; text-decoration:none;
+  font-weight:700; font-size:.82rem;
+  transition: background .2s ease, transform .1s ease;
+}
+
+.detail-btn{
+    max-width: 35%;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+
+}
+.button:hover{ background:#5b1fa1; }
+.button:active{ transform: translateY(1px); }
+
+.programs-title{
+  margin:0 0 12px; text-align:center; font-weight:800; letter-spacing:.2px;
+  color:#fff;
+}
+
+/*Plan your visit*/
+
+.plan-your-visit {
+  text-align: center;      /* Midtstiller alt inni seksjonen */
+  padding: 2rem 1rem;      /* Litt luft rundt */
+}
+
+.plan-your-visit .gigalab-icon img {
+  width: 50px;             /* Juster størrelse om du vil */
+  margin-bottom: 1rem;     /* Litt luft under ikonet */
+}
+
+.plan-your-visit p {
+  margin-bottom: 1rem;     /* Luft mellom teksten og knappen */
+  font-size: 1rem;
+}
+
+.plan-your-visit .button {
+  display: inline-block;   /* Gjør at knappen sentreres */
+  margin: 0 auto;
+}
