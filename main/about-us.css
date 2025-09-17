@@ -51,6 +51,18 @@
   font-weight: 300;
 }
 
+@media(min-width:768px) {
+    .hero-text h2{
+        font-size: smaller;
+    }
+}
+
+@media(min-width:768px) {
+    .hero-text p{
+        font-size: small;
+    }
+}
+
 /*Start you Adventure*/
 
 .start-your-adventure {

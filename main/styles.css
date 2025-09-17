@@ -38,10 +38,6 @@ ul {
   display: block;
 }
 
-.explore-image img {
-    width: 30vw;
-}
-
 /*Chevron*/
 details summary {
   list-style: none;
@@ -67,7 +63,7 @@ details[open] .chevron {
   transform: rotate(180deg);
 }
 /* from tablet and above */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .chevron {
     display: inline-block;
     width: 1rem;   /* juster størrelse hvis ønskelig */
@@ -88,6 +84,20 @@ details[open] .chevron {
 /* Logo */
 .logo img {
   height: 40px;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .logo img {
+    height: 60px; /* større logo */
+  }
+}
+
+/* Desktop (optional, enda større) */
+@media (min-width: 1200px) {
+  .logo img {
+    height: 70px;
+  }
 }
 
 /* Checkbox hidden */
@@ -114,7 +124,7 @@ details[open] .chevron {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 75%;
+  width: 65%;
   height: 100dvh;
   background: #6634A7;
   color: white;
@@ -128,6 +138,14 @@ details[open] .chevron {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* Tablet: less wide */
+@media (min-width: 768px) and (max-width: 899px) {
+  .main-nav {
+    width: 35%;
+  }
+}
+
 
 /* Open menu when checkbox is checked */
 .nav-toggle:checked ~ .main-nav {
@@ -217,8 +235,9 @@ details[open] .chevron {
 }
   
 
-/*Hero section*/
-
+/* ---------------- */
+/* HERO - BASE (MOBILE) */
+/* ---------------- */
 .hero {
   position: relative;
   height: 70vh;
@@ -231,45 +250,86 @@ details[open] .chevron {
   overflow: hidden;
 }
 
-/* overlay covering the bottom 30% */
+/* Overlay */
+
 .hero-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%;
-  background: rgba(0, 0, 0, 0.45);
+  height: 45%; 
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* hero text + button */
+/* Hero text + button  */
 .hero-content {
   position: relative;
-  z-index: 2; /* make sure it’s above overlay */
-  text-align: center;
-  padding: 1.5rem;
+  z-index: 2;
+  color: #fff;
 }
 
 .hero h1 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  margin-bottom: 1rem;
+  font-size: xx-large
 }
 
 .hero-cta a {
   background: #FB8500;
   color: #fff;
-  padding: 0.4rem 1.5rem;
+  padding: 0.6rem 1.8rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: background .2s;
-  margin-left: -63%;
-
 }
 
 .hero-cta a:hover {
   background: #edaa5e;
+}
+
+
+/* ---------------- */
+/* HERO - TABLET */
+/* ---------------- */
+@media (min-width: 768px) {
+  .hero {
+    height: 60vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline: 2rem;
+  }
+
+  .hero-content {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .hero-cta a {
+    margin-left: 0;
+  }
+}
+
+/* ---------------- */
+/* HERO - DESKTOP */
+/* ---------------- */
+@media (min-width: 1024px) {
+  .hero {
+    height: 70vh;
+    padding-inline: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
 }
 
 
@@ -284,7 +344,8 @@ padding: 2rem 1rem;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
-  margin: 0 6vh;
+  width: 90%;
+  margin: auto;
 }
 
 .cta-button{
@@ -298,7 +359,6 @@ padding: 2rem 1rem;
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 8px;
-
   transition: 0.3s ease;
 }
 
@@ -308,6 +368,20 @@ padding: 2rem 1rem;
 
 .cta-button:hover{
   background: #8D5DCC;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .cta-container {
+    max-width: 420px;
+  }
+}
+
+/* Desktop and smaller */
+@media (min-width: 1200px) {
+  .cta-container {
+    max-width: 380px;
+  }
 }
 
 /*Explore the Wonders of Science*/
@@ -322,63 +396,57 @@ padding: 2rem 1rem;
   margin-bottom: 1rem;
 }
 
-.explore-cards{
+/* Wrapper */
+.explore-cards {
   display: grid;
   gap: 1rem;
 }
 
-.explore-card{
+/* Card */
+.explore-card {
   display: grid;
-  grid-template-columns: 40% 1fr;
-  min-height: 200px;
+  grid-template-columns: 1.5fr 2fr; 
+  align-items: stretch; 
+  background: #d7b9f3;
   border-radius: 24px;
   overflow: hidden;
-  background: #BC9EE2;
 }
 
+/* Image side */
 .explore-image {
-  position: relative;
+  min-height: 160px;
+  height: 100%;      
 }
-
-.explore-card img{
+.explore-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.explore.info {
-  padding: 12px;
+/* Text side */
+.explore-info {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  justify-content: space-between;
+  gap: .75rem;
+  padding: 1rem 1.25rem;
 }
+.explore-info h4 { margin: 0; color: #fff; }
+.explore-info p  { margin: 0; color: #fff; }
 
-.explore-info h4{
-  padding: .4rem .6rem;
-  color: #fff;
-  margin: 0;
-}
-
-.explore-info p{
-  margin: 0;
-  line-height: 1.45;
-  padding: .4rem .6rem;
-  color: #fff;
-}
-
-.explore-button{
+/* button */
+.explore-button {
   align-self: flex-start;
-  display: inline-block;
-  padding: 0.55rem 1rem;
-  background: #6634A7;
+  margin-top: auto;
   text-decoration: none;
-  border-radius: 17px;
-  transition: .2s ease;
+  padding: .75rem 1.25rem;
+  border-radius: 16px;
+  background: #51208f;
   color: #fff;
-  margin-left: 5%;
+  font-weight: 700;
 }
+
+
 
 /*Stay Tuned for new adventures*/
 .stay-tuned{
@@ -401,7 +469,6 @@ padding: 2rem 1rem;
   border-radius: 6px;
   overflow: hidden;
   height: 280px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.12);
 }
 
 .stay-card img{
@@ -478,6 +545,8 @@ position: absolute;
   display: grid;
   gap: 2rem;
   padding-top: 1.5rem;
+  justify-items: center;
+  text-align: center;
 }
 
 .footer-col .footer-title {
@@ -559,7 +628,8 @@ text-align: center;
 @media (min-width: 768px) {
   .footer-top { grid-template-columns: repeat(3, 1fr); }
   .newsletter {
-    grid-template-columns: 1fr auto;
+    display: block;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: .5rem;
   }
