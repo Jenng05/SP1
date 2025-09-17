@@ -136,21 +136,21 @@
 /*Plan your visit*/
 
 .plan-your-visit {
-  text-align: center;      /* Midtstiller alt inni seksjonen */
-  padding: 2rem 1rem;      /* Litt luft rundt */
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .plan-your-visit .gigalab-icon img {
-  width: 50px;             /* Juster størrelse om du vil */
-  margin-bottom: 1rem;     /* Litt luft under ikonet */
+  width: 50px;
+  margin-bottom: 1rem;
 }
 
 .plan-your-visit p {
-  margin-bottom: 1rem;     /* Luft mellom teksten og knappen */
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 .plan-your-visit .button {
-  display: inline-block;   /* Gjør at knappen sentreres */
+  display: inline-block;
   margin: 0 auto;
 }

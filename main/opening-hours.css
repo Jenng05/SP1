@@ -136,6 +136,7 @@ margin: 2rem auto;
 }
 
 /*Plan you visit*/
+
 .plan-your-visit {
   padding: 1.5rem 1rem 2rem;
   display: grid;
@@ -158,8 +159,8 @@ margin: 2rem auto;
 .plan-btn {
   display: flex;
   align-items: center;
-  justify-content: center; /* sentrerer tekst + ikon */
-  gap: 10px;               /* avstand mellom ikon og tekst */
+  justify-content: center;
+  gap: 10px;
   padding: 14px 16px;
   border-radius: 10px;
   background: #6b26b6;
@@ -172,7 +173,7 @@ margin: 2rem auto;
 .plan-btn img {
   width: 18px;
   height: 18px;
-  filter: brightness(0) invert(1); /* gjør ikoner hvite hvis de er mørke */
+  filter: brightness(0) invert(1); 
 }
 
 .plan-btn:hover {
