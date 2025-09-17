@@ -51,3 +51,35 @@
   font-weight: 300;
 }
 
+/*Start you Adventure*/
+
+.start-your-adventure {
+  background-color: #BC9EE2; 
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem 2rem;
+}
+
+.start-your-adventure h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.start-your-adventure .button {
+  display: inline-block;
+  background-color: #6634A7;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.start-your-adventure .button:hover {
+  background-color: #3d2870;
+}
