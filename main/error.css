@@ -1,0 +1,81 @@
+.site-header-error{
+    background: linear-gradient(to right, #F7EFF5 0%, #BC9EE2 100%);
+}
+
+/* Error hero section */
+.error-hero {
+  background-color: #BC9EE2;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+/* Overskrift */
+.error-hero h1 {
+  font-size: 2.5rem;
+  color: #fff;  /* rødlig farge for å indikere feil */
+  margin-bottom: 1rem;
+}
+
+/* Tekst */
+.error-hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+/* Navigasjon med lenker */
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Første lenke – “Go to homepage” */
+.error-actions a:first-child {
+  display: inline-block;
+  background-color: #5e3ea1; /* lilla primærknapp */
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.error-actions a:first-child:hover {
+  background-color: #3d2870;
+}
+
+/* Sekundære knapper */
+.error-actions .button-secondary {
+  background-color: #e6d8f5; /* lys lilla */
+  color: #5e3ea1;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.error-actions .button-secondary:hover {
+  background-color: #d0bce9;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 600px) {
+  .error-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .error-hero h1 {
+    font-size: 2rem;
+  }
+
+  .error-hero p {
+    font-size: 1rem;
+  }
+}

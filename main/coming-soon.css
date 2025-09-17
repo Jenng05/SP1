@@ -1,0 +1,74 @@
+.site-header-coming-soon{
+    background: linear-gradient(to right, #F7EFF5 0%, #BC9EE2 100%);
+}
+
+/* Container */
+.coming-soon {
+  background-color: #BC9EE2;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+/* Overskrift */
+.coming-soon h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Tekst */
+.coming-soon p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+/* Navigasjon med knapper */
+.cs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cs-actions .button {
+  background-color: #5e3ea1;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cs-actions .button:hover {
+  background-color: #3d2870;
+}
+
+/* Sekundære knapper */
+.cs-actions .button-secondary {
+  background-color: #e6d8f5;
+  color: #5e3ea1;
+}
+
+.cs-actions .button-secondary:hover {
+  background-color: #d0bce9;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 600px) {
+  .coming-soon {
+    padding: 2rem 1.5rem;
+  }
+
+  .coming-soon h1 {
+    font-size: 2rem;
+  }
+
+  .coming-soon p {
+    font-size: 1.1rem;
+  }
+}
