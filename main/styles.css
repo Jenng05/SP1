@@ -411,20 +411,29 @@ position: absolute;
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0 0 .75rem;
-  text-decoration: underline;         
+  letter-spacing: 10%;        
 }
 
 /* Lists */
 .footer-links,
 .footer-address { margin: 0; padding: 0; list-style: none; }
 
-.footer-links li,
 .footer-address p {
   display: flex;
   align-items: center;
   gap: .6rem;
   margin: .5rem 0;
 }
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;  /* sentrerer ikon + tekst vertikalt */
+  gap: 0.5rem;          /* avstand mellom ikon og tekst */
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 .footer-links img,
 .footer-address img {
