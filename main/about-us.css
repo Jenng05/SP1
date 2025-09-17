@@ -21,18 +21,19 @@
   content: "";
   position: absolute;
   inset: 0;
-  background:rgba(0, 0, 0, 0.45);
+  background:rgba(0, 0, 0, 0.65);
   z-index: 1;
 }
 
 .hero-text {
   position: inherit;
-  bottom: 80%;
+  bottom: 89%;
   left: 50%;
   transform: translateX(-50%);
   text-align: left;
   color: #fff;
   z-index: 2;
+  padding: 2rem 1rem;
 }
 
 .hero-text h2 {
@@ -47,6 +48,6 @@
   font-size: clamp(0.95rem, 3.5vw, 1.25rem);
   font-weight: 500;
   opacity: .95;
-  font-weight: italic;
+  font-weight: 300;
 }
 
