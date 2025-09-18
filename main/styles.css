@@ -32,23 +32,23 @@ ul {
   list-style: none;
 }
 
-.hero img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/*===============HEADER=============*/
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.1rem 1rem .1rem;
+  background: linear-gradient(to right, #F7EFF5 0%, #004B3F 100%);
 }
 
 /*Chevron*/
 details summary {
   list-style: none;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::marker {
-  content: none;
 }
 
 .chevron {
@@ -62,47 +62,23 @@ details summary::marker {
 details[open] .chevron {
   transform: rotate(180deg);
 }
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::marker {
+  content: none;
+}
+
 /* from tablet and above */
 @media (min-width: 769px) {
   .chevron {
     display: inline-block;
-    width: 1rem;   /* juster størrelse hvis ønskelig */
+    width: 1rem;
     height: auto;
-    margin-left: 0.3rem; /* litt luft mellom tekst og ikon */
+    margin-left: 0.3rem;
   }
-}
-
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.1rem 1rem .1rem;
-  background: linear-gradient(to right, #F7EFF5 0%, #004B3F 100%);
-}
-
-/* Logo */
-.logo img {
-  height: 40px;
-}
-
-/* Tablet and above */
-@media (min-width: 768px) {
-  .logo img {
-    height: 60px; /* større logo */
-  }
-}
-
-/* Desktop (optional, enda større) */
-@media (min-width: 1200px) {
-  .logo img {
-    height: 70px;
-  }
-}
-
-/* Checkbox hidden */
-.nav-toggle {
-  display: none;
 }
 
 /* Hamburger button */
@@ -117,6 +93,11 @@ details[open] .chevron {
 .hamburger img {
   width: 28px;
   height: 28px;
+}
+
+/* Checkbox hidden */
+.nav-toggle {
+  display: none;
 }
 
 /* Menu panel (hidden by default, slides in from the right) */
@@ -145,7 +126,6 @@ details[open] .chevron {
     width: 35%;
   }
 }
-
 
 /* Open menu when checkbox is checked */
 .nav-toggle:checked ~ .main-nav {
@@ -197,8 +177,7 @@ details[open] .chevron {
   height: 28px;
 }
 
-
-/* NAVIGATION - DESKTOP VIEW    */
+/* Navigation - desktop*/
 @media (min-width: 900px) {
   /* Hide hamburger and close buttons */
   .hamburger,
@@ -234,10 +213,14 @@ details[open] .chevron {
   }
 }
   
+/* ==============HERO=============== */
 
-/* ---------------- */
-/* HERO - BASE (MOBILE) */
-/* ---------------- */
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .hero {
   position: relative;
   height: 70vh;
@@ -251,7 +234,6 @@ details[open] .chevron {
 }
 
 /* Overlay */
-
 .hero-overlay {
   position: absolute;
   bottom: 0;
@@ -292,10 +274,7 @@ details[open] .chevron {
   background: #edaa5e;
 }
 
-
-/* ---------------- */
-/* HERO - TABLET */
-/* ---------------- */
+/* Hero - Tablet */
 @media (min-width: 768px) {
   .hero {
     height: 60vh;
@@ -314,9 +293,14 @@ details[open] .chevron {
   }
 }
 
-/* ---------------- */
-/* HERO - DESKTOP */
-/* ---------------- */
+/* Tablet and above */
+@media (min-width: 768px) {
+  .logo img {
+    height: 60px; /* større logo */
+  }
+}
+
+/* Hero - Desktop */
 @media (min-width: 1024px) {
   .hero {
     height: 70vh;
@@ -332,8 +316,15 @@ details[open] .chevron {
   }
 }
 
+/* Desktop (optional, enda større) */
+@media (min-width: 1200px) {
+  .logo img {
+    height: 70px;
+  }
+}
 
-/*CTA section*/
+
+/*==============CTA section=============*/
 .cta-section {
 background: #D7D4DB;
 padding: 2rem 1rem;
@@ -377,14 +368,14 @@ padding: 2rem 1rem;
   }
 }
 
-/* Desktop and smaller */
+/* Desktop*/
 @media (min-width: 1200px) {
   .cta-container {
     max-width: 380px;
   }
 }
 
-/*Explore the Wonders of Science*/
+/*==========Explore the Wonders of Science============*/
 .explore-section h2{
   text-align: center;
 }
@@ -446,9 +437,7 @@ padding: 2rem 1rem;
   font-weight: 700;
 }
 
-
-
-/*Stay Tuned for new adventures*/
+/*============Stay Tuned for new adventures===========*/
 .stay-tuned{
   padding: 2rem 1rem;
   text-align: center;
@@ -512,7 +501,7 @@ position: absolute;
 }
 
 
-/*Footer*/
+/*=========Footer==========*/
 
 /* Utilities */
 .container { 
@@ -531,7 +520,6 @@ position: absolute;
   white-space:nowrap; 
   border:0; }
 
-/* Footer */
 .footer {
   background: #b996e5;
   color: #fff;
@@ -574,8 +562,6 @@ position: absolute;
   text-decoration: none;
   color: inherit;
 }
-
-
 
 .footer-links img,
 .footer-address img {
@@ -624,7 +610,7 @@ opacity: .9;
 text-align: center;
 }
 
-/* Responsive */
+/* Footer - Tablet */
 @media (min-width: 768px) {
   .footer-top { grid-template-columns: repeat(3, 1fr); }
   .newsletter {
@@ -635,9 +621,32 @@ text-align: center;
   }
 }
 
+/* Footer - Desktop*/
 @media (min-width: 1024px) {
   .footer-bottom {
     grid-template-columns: 1fr auto;
     align-items: center;
   }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 70vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline: 4rem;
+  }
+
+  .hero-overlay {
+    height: 55%;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-content {
+    text-align: left;
+    max-width: 56rem;
+  }
+
+  .hero-cta a { margin-left: 0; }
+  .hero h1 { font-size: clamp(2.2rem, 3vw, 3.2rem); }
 }

@@ -1,6 +1,10 @@
+/*====Header====*/
+
 .site-header-coming-soon{
     background: linear-gradient(to right, #F7EFF5 0%, #BC9EE2 100%);
 }
+
+/*====Main====*/
 
 .coming-soon {
   background-color: #BC9EE2;
@@ -22,6 +26,8 @@
   color: #fff;
   margin-bottom: 2.5rem;
 }
+
+/*Navigation button*/
 
 .cs-actions {
   display: flex;

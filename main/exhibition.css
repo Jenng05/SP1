@@ -1,6 +1,10 @@
+/*====Header====*/
+
 .site-header-exhibition{
     background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
 }
+
+/*====Hero====*/
 
 .hero-exhibition {
   position: relative;
@@ -49,7 +53,7 @@
   opacity: .95;
 }
 
-/* Ready to Explore */
+/*======Ready to Explore======*/
 
 .exhibitions {
   display: grid;
@@ -79,7 +83,6 @@
   position: relative;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
 }
 
 .exhibition-card img {

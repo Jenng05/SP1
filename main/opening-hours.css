@@ -1,6 +1,10 @@
+/*====Header====*/
+
 .site-header-opening-hours{
     background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
 }
+
+/*====Hero====*/
 
 .hero-opening-hours {
   position: relative;
@@ -42,7 +46,7 @@
   letter-spacing: 9%;
 }
 
-/*Opening hours table*/
+/*======Opening hours table=======*/
 
 .opening-hours-table{
 margin: 2rem auto;
@@ -106,7 +110,7 @@ margin: 2rem auto;
     font-weight: normal;
 }
 
-/*Special Days*/
+/*======Special Days=======*/
 
 .special-days {
   background: #f2f2f2;
@@ -135,7 +139,7 @@ margin: 2rem auto;
   font-size: 0.95rem;
 }
 
-/*Plan you visit*/
+/*======Plan you visit======*/
 
 .plan-your-visit {
   padding: 1.5rem 1rem 2rem;

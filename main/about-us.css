@@ -1,6 +1,10 @@
+/*====Header====*/
+
 .site-header-about-us{
     background: linear-gradient(to right, #F7EFF5 0%, #739EC9 100%);
 }
+
+/*====Hero====*/
 
 .hero-about-us {
   position: relative;
@@ -51,6 +55,8 @@
   font-weight: 300;
 }
 
+/*Hero - tablet*/
+
 @media(min-width:768px) {
     .hero-text h2{
         font-size: smaller;
@@ -63,7 +69,7 @@
     }
 }
 
-/*Start you Adventure*/
+/*======Start you Adventure=======*/
 
 .start-your-adventure {
   background-color: #BC9EE2; 

@@ -1,7 +1,10 @@
+/*====Header====*/
+
 .site-header-schoolkindergarten{
     background: linear-gradient(to right, #F7EFF5 0%, #E4CB95 100%);
 }
 
+/*====Hero====*/
 .hero-school-and-kindergarten {
   position: relative;
   height: 52vh;       
@@ -49,7 +52,7 @@
   opacity: .95;
 }
 
-/*Bring Science to Life for Young Minds*/
+/*======Bring Science to Life for Young Minds========*/
 .school-and-kindeergarten-intro{
     text-align: center;
    padding: 2rem 2rem 6rem 2rem;
@@ -68,6 +71,7 @@
   margin: 0 auto;
 }
 
+/*Tablet*/
 @media (min-width: 768px) {
   .programs-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -76,6 +80,7 @@
   .card { margin-bottom: 0; }   /* gap tar seg av mellomrommet */
 }
 
+/*Desktop*/
 @media (min-width: 1024px) {
   .programs-grid { gap: 18px; max-width: 960px; }
 }
@@ -147,7 +152,7 @@
   color:#fff;
 }
 
-/*Plan your visit*/
+/*=======Plan your visit======*/
 
 .plan-your-visit {
   text-align: center;
