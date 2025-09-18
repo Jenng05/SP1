@@ -110,6 +110,25 @@ margin: 2rem auto;
     font-weight: normal;
 }
 
+/*Desktop*/
+
+@media (min-width: 1024px) {
+
+  .opening-hours-table { 
+    display: grid;
+    place-items: center;
+    padding-inline: 1rem;
+  }
+
+
+  .opening-hours-table .hours-title,
+  .opening-hours-table .hours-card {
+    width: min(30rem, 90%);
+    margin-inline: auto;
+  }
+}
+
+
 /*======Special Days=======*/
 
 .special-days {
@@ -129,8 +148,8 @@ margin: 2rem auto;
 
 .special-days ul {
   list-style: disc; 
-  padding-left: 1.2rem;
-  margin: 0;
+  padding-left: 28rem;
+  margin: 0 auto;
 }
 
 .special-days li {
@@ -138,6 +157,7 @@ margin: 2rem auto;
   line-height: 1.4;
   font-size: 0.95rem;
 }
+
 
 /*======Plan you visit======*/
 

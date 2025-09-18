@@ -53,6 +53,7 @@
   opacity: .95;
 }
 
+
 /*======Ready to Explore======*/
 
 .exhibitions {
@@ -141,3 +142,14 @@
   transition: background .2s ease, transform .2s ease;
 }
 .exhibition-btn:hover { background: #531d8a; }
+
+/*Desktop*/
+
+@media (min-width: 1024px) {
+  .exhibition-card {
+    width: clamp(720px, 80%, 1100px);              /* smalere på store skjermer */
+    margin-inline: auto;                           /* sentrer hvert kort */
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}

@@ -58,6 +58,20 @@
    padding: 2rem 2rem 6rem 2rem;
 }
 
+/* Desktop: make the intro paragraph narrower and centered */
+@media (min-width: 1024px) {
+  .school-and-kindeergarten-intro {
+    text-align: center;              /* behold senter */
+  }
+
+  .school-and-kindeergarten-intro p {
+    max-width: 65ch;                 /* smalere tekstblokk */
+    margin-inline: auto;             /* sentrer blokka */
+    line-height: 1.7;                /* litt luftigere */
+  }
+}
+
+
 .programs {
   background: #D7D4DB;
   padding: 1.25rem 1rem 2rem;
