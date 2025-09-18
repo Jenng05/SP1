@@ -59,13 +59,13 @@
 
 @media(min-width:768px) {
     .hero-text h2{
-        font-size: smaller;
+        font-size: clamp(1rem, 3.0vw, 3rem);
     }
 }
 
 @media(min-width:768px) {
     .hero-text p{
-        font-size: small;
+        font-size: clamp(1rem, 1.05vw, 1.2rem); 
     }
 }
 
@@ -121,6 +121,24 @@
 
 .start-your-adventure .button:hover {
   background-color: #3d2870;
+}
+
+/*Tablet*/
+
+@media (min-width: 768px) {
+    .start-your-adventure {
+    width: min(900px, 70%);
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 18px;
+
+    /* center content inside the box */
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    text-align: center;
+    }
+
 }
 
 /* Desktop */

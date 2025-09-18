@@ -148,7 +148,7 @@ margin: 2rem auto;
 
 .special-days ul {
   list-style: disc; 
-  padding-left: 28rem;
+  padding-left: 1.2rem;
   margin: 0 auto;
 }
 
@@ -156,6 +156,17 @@ margin: 2rem auto;
   margin-bottom: 0.6rem;
   line-height: 1.4;
   font-size: 0.95rem;
+}
+
+/*Desktop*/
+
+/* Desktop: center the list block */
+@media (min-width: 1024px) {
+  .special-days ul {
+    max-width: 70ch;        /* juster 60–80ch etter smak */
+    margin: 0 auto;         /* center */
+    padding-left: 6em;   /* keep bullets outside the text */
+  }
 }
 
 
