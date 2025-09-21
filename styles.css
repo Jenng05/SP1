@@ -276,7 +276,7 @@ details summary::marker {
   position: relative;
   height: 70vh;
   min-height: 320px;
-  background: url("/images/girl-blue-room.jpg") center/cover no-repeat;
+  background: url("./images/girl-blue-room.jpg") center/cover no-repeat;
   display: flex;
   align-items: flex-end;
   justify-content: center;
