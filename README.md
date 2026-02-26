@@ -18,3 +18,5 @@ The focus was on creating a cohesive design system, responsive layout, and struc
 
 ## Live Demo
 [View Live Site](INSERT_LINK_HERE)
+
+git clone: https://github.com/Jenng05/SP1.git
