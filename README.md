@@ -5,7 +5,7 @@ This project was developed as part of the Semester Project assignment, where the
 The focus was on creating a cohesive design system, responsive layout, and structured HTML and CSS implementation.
 
 ## Built With
-- HTML5
+- HTML
 - CSS3
 
 ## Design & Development Focus
@@ -17,6 +17,6 @@ The focus was on creating a cohesive design system, responsive layout, and struc
 - Clean CSS organization
 
 ## Live Demo
-[View Live Site](INSERT_LINK_HERE)
+[View Live Site] - https://jenng05.github.io/SP1/
 
 git clone: https://github.com/Jenng05/SP1.git
